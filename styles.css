@@ -64,4 +64,14 @@
             line-height: 1em;
             text-align: right;
         }
+
+        .image{
+            width:700px;
+            height:350px;
+            isplay: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
     
