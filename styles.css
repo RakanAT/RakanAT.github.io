@@ -68,10 +68,9 @@
         .image{
             width:700px;
             height:350px;
-            isplay: block;
+            display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 50%;
         }
 
     
