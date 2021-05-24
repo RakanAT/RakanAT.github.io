@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<head>
+	<title>
+		Module 1 - Lab 1
+	</title>
+</head>
+
+<link rel="stylesheet" href="styles.css">
+
+<body class="center">
+	<form id="form">
+
+	<h1>
+		Twitch User Interface Survery
+	</h1>
+
+	<img src="images/twitchUI.png" alt="Twitch UI" class="center" style="width:700px;height:350px;">
+
+	<div class="textRight">
+		<a href="https://www.twitch.tv/"> Source </a>
+	</div>
+
+
+	<div class="formControl">
+		<label for="name" id="labelName">
+		Name
+		</label>
+
+		<input type="text" id="name" placeholder="Enter Full Name"/>
+	</div>
+
+	<div class="formControl">
+		<label for="email" id="labelEmail">
+		Email
+		</label>
+
+		<input type="text" id="email" placeholder="example@example.com"/>
+	</div>
+
+	<div class="formControl">
+            <label for="theme" id="themeType">
+                Do you prefer the dark theme or light them UI?
+            </label>
+              
+            <select name="theme" id="theme">
+                <option value="dark">Dark Theme</option>
+                <option value="intern">Light Theme</option>
+                <option value="other">Any other themes?</option>
+            </select>
+        </div>
+
+	<div class="formControl">
+         <label>
+                What is your preferred content on Twitch?
+        </label>
+  
+        <label for="content1">
+                <input type="radio"
+                       id="content1"
+                       name="recommed">Social (chatting with streamers)</input>
+        </label>
+        <label for="content2">
+                <input type="radio"
+                       id="content2"
+                       name="recommed">Entertainment</input>
+        </label>
+        <label for="content3">
+                <input type="radio"
+                       id="content3"
+                       name="recommed">Gaming</input>
+        </label>
+        <label for="content4">
+                <input type="radio"
+                       id="content4"
+                       name="recommed">Hot Tub Streamers</input>
+        </label>
+        <label for="content5">
+                <input type="radio"
+                       id="content5"
+                       name="recommed">Other</input>
+        </label>
+        </div>
+
+	<div class="formControl">
+            <label>Which of the following has helped you discover more channels? 
+                <small>(Check all that apply)</small>
+            </label>
+
+            <table>
+            	<label>
+                	<input type="checkbox"
+                       name="inp">Front Page</input></label>
+                <label>
+                	<input type="checkbox"
+                       name="inp">Recommended Channels</input></label>
+                <label>
+               		<input type="checkbox"
+                       name="inp">Youtube</input></label>
+                <label>
+                	<input type="checkbox"
+                       name="inp">Social Media</input></label>
+                <label>
+                	<input type="checkbox"
+                       name="inp">Friends</input></label>
+                <label>
+                	<input type="checkbox"
+                       name="inp">Other</input>
+                   </label>
+        	</table>
+        </div>
+
+	<div class="formControl">
+		<label for="answer">
+		Is twitch your preferred streaming platform? Why?
+		</label>
+		<textarea name="anser" id="answer"
+                placeholder="Enter your answer here" style="width: 650px; height:50px;">
+        </textarea>	
+	</div>
+		<div class="formControl">
+		<label for="comment">
+		Enter any other comments here
+		</label>
+		<textarea name="comment" id="comment"
+                placeholder="Enter your comment here" style="width: 650px; height:50px;">
+        </textarea>	
+	</div>
+		<button type="button button1" value="Submit" hover>
+           		Submit
+    		</button>
+   </form>
+
+<footer>
+  <p><a href="mailto:ralta050@uottawa.ca">Author: Palestinian Shepherd</a></p>
+</footer>
+
+
+</body>
+
+
+
+</html>
