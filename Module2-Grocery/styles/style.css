@@ -11,6 +11,7 @@
 .tab button {
   background-color: inherit;
   float: left;
+  font-size: 1em;
   border: none;
   outline: none;
   cursor: pointer;
@@ -36,6 +37,30 @@
   border-top: none;
 }
 
+body {
+  font-family: helvetica;
+  background-color: #663399;
+  font-size: 1.5em;
+  color: white;
+  padding: 20px;
+}
+
+#dietSelect{
+  font-size: 1em;
+}
+#organic{
+  font-size: 1em;
+}
+#addCart{
+  font-size: 1em;
+}
+
+#displayOrganic{
+  line-height: 1.8em;
+  font-size: 1.25em;
+}
+
+/*
 button#increasetext {
   font-size: 1.50em;
 }
@@ -47,3 +72,5 @@ button#resettext {
 button#decreasetext {
   font-size: 1.125em;
 }
+
+*/

@@ -10,10 +10,22 @@ var products = [
 		price: 1.50
 	},
 	{
+		name: "Toast $1.70",
+		LactoseFree: true,
+		NutFree: true,
+		price: 1.70
+	},
+	{
 		name: "Trail Mix $1.99",
 		LactoseFree: true,
 		NutFree: false,
 		price: 1.99
+	},
+	{
+		name: "Milk (2L) $2.10",
+		LactoseFree: false,
+		NutFree: true,
+		price: 2.10
 	},
 	{
 		name: "Almond Milk $2.30",
@@ -32,7 +44,26 @@ var products = [
 		LactoseFree: true,
 		NutFree: true,
 		price: 3.00
+	},
+	{
+		name: "Cereal $3.10",
+		LactoseFree: true,
+		NutFree: false,
+		price: 3.10
+	},
+	{
+		name: "Burgers (6pcs) $5.50",
+		LactoseFree: true,
+		NutFree: true,
+		price: 5.50
+	},
+	{
+		name: "MeatBalls (15pcs) $5.80",
+		LactoseFree: true,
+		NutFree: true,
+		price: 5.80
 	}
+
 	
 
 
@@ -50,6 +81,9 @@ function restrictListProducts(prods, restriction) {
 			product_names.push(prods[i].name);
 		}
 		else if ((restriction == "NutFree") && (prods[i].NutFree == true)){
+			product_names.push(prods[i].name);
+		}
+		else if((restriction == "LactoseFree & NutFree") && (prods[i].NutFree == true) && (prods[i].LactoseFree ==true)){
 			product_names.push(prods[i].name);
 		}
 		else if (restriction == "None"){

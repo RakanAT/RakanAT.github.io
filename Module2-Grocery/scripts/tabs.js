@@ -21,6 +21,26 @@ function openInfo(evt, tabName) {
 
 }
 
+//Reassures the customer that the foods are organic
+
+function selectOrganic(slct1, slct2){
+	var section1 = document.getElementById(slct1);
+	var section2 = document.getElementById(slct2);
+
+	section2.innerHTML = "";
+
+	if (section1.value == "Yes"){
+
+		var label2 = document.createElement('label')
+		label2.htmlFor = "Orgainc";
+		label2.appendChild(document.createTextNode("The following products are Organic! It's in the name of our store!"));
+		section2.appendChild(label2);
+
+		section2.appendChild(document.createElement("br"));
+
+	}
+}
+
 
 	
 // generate a checkbox list from a list of products
@@ -90,3 +110,5 @@ function selectedItems(){
 	c.appendChild(document.createTextNode("Total Price is $" + getTotalPrice(chosenProducts)));
 		
 }
+
+
