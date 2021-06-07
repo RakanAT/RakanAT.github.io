@@ -1,0 +1,67 @@
+/* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  font-family: helvetica;
+  font-size: 1.5em;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  overflow: hidden;
+  display: none;
+}
+
+body {
+  font-family: helvetica;
+  font-size: 1.5em;
+  background-color: #663399;
+  color: white;
+  padding: 20px;
+}
+
+#dietSelect{
+  font-size: 1em;
+}
+#organic{
+  font-size: 1em;
+}
+#addCart{
+  font-size: 1em;
+}
+
+#displayOrganic{
+  line-height: 1.8em;
+  font-size: 1.25em;
+}
+
+/*
+button#increasetext {
+  font-size: 1.50em;
+}
+
+button#resettext {
+  font-size: 1.25em;
+}
+
+button#decreasetext {
+  font-size: 1.125em;
+}
+
+*/
