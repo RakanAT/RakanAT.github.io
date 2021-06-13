@@ -36,52 +36,44 @@ Many websites will use what is called CSS grid layouts, where you will have a he
         <p class="p-4 my-3" style="font-size: 25px">We are a local small business looking to meet your chiropracter need</p>
         <p style="font-size: 25px; padding-left: 1.5rem">We are dedicated to providing the <strong>best</strong> care to our customers</p>
     </div>
-    <!--
-    Tables are one of many ways to organize information easily.
-    It is a good way to list of prices, or services in a business website
-    https://getbootstrap.com/docs/5.0/content/tables/
-    -->
-    <table class="table table-secondary table-hover">
-        <thead>
-            <tr>
-                <th scope="col"><h2>Service</h2></th>
-                <th scope="col"><h2>Description</h2></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Full Session</td>
-                <td>Enjoy a full session where the chiropractor will assess your body and make adjustments to help restore your full youth.</td>
-            </tr>
-            <tr>
-                <td>Back/Neck Relief</td>
-                <td>If you have specific back and neck pain, let our chiropractitioners decompress your spine and relieve the tension from your neck. </td>
-            </tr>
-            <tr>
-                <td>Limb Relief</td>
-                <td>For people who have joint aches and need relief, our chiropractitioners have expertise in propper alignment of limbs.</td>
-            </tr>
-        </tbody>
-    </table>
 
-    <table class="table table-info table-hover">
-    	<thead>
-    		<tr>
-    			<th scope="col"><h1>Contact Us!</h1></th>
-    			<th scope="col"></th>
-    		</tr>
-    	</thead>
-    	<tbody>
-    		<tr>
-    			<td>Phone Number</td>
-    			<td>(613)-8*0-*5*5</td>
-    		</tr>
-    		<tr>
-    			<td>Email Inquiries</td>
-    			<td>generic@chiropracters.ca</td>
-    		</tr>
-    	</tbody>
-    </table>
+    <h1 class="text-white">Services Offered</h1>
+   
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Full Body Session
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Enjoy a full session where the chiropractor will assess your body and make adjustments to help restore your full youth.</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Back/Neck Relief
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">If you have specific back and neck pain, let our chiropractitioners decompress your spine and relieve the tension from your neck. </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Limb Relief
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">For people who have joint aches and need relief, our chiropractitioners have expertise in propper alignment of limbs.</div>
+            </div>
+        </div>
+    </div>
+
+    <p></p>
+   
     <!-- Alerts are an easy way to grab the users attention, this page goes into more detail
     https://getbootstrap.com/docs/5.0/components/alerts/
     -->
@@ -105,7 +97,7 @@ Many websites will use what is called CSS grid layouts, where you will have a he
     https://getbootstrap.com/docs/5.0/components/modal/
     -->
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Launch demo modal
+        Book An Appointment
     </button>
 
     <!-- Modal -->
@@ -113,27 +105,17 @@ Many websites will use what is called CSS grid layouts, where you will have a he
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Appointments</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>`
                 </div>
                 <div class="modal-body">
-                    In the body we can add various components. In this example some radio buttons
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                            Yes
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                        <label class="form-check-label" for="flexRadioDefault2">
-                            No
-                        </label>
-                    </div>
+                	<p>
+                    To book an appointment, please call us at (613)-8*0-*8*5. We can provide you with a quote over the phone!</p>
+
+                    We are working towards adding booking features on this website!
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Dismiss</button>
                 </div>
             </div>
         </div>
@@ -144,74 +126,35 @@ Many websites will use what is called CSS grid layouts, where you will have a he
     https://getbootstrap.com/docs/5.0/components/card/
     -->
 
-    <h1>Meet the Physicians!</h1>
+    <h1 class="text-white">Meet the Chiropractor!</h1>
     <div class="row justify-content-around">
         <div class="card" style="width: 18rem;">
             <img src="images/doctor.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <p class="card-text">Here is some filler text, in here you can describe your doctor</p>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="images/doctor.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">Here is some filler text, in here you can describe your doctor</p>
+                <p class="card-text">Rakan is a professional in the chiropractic field. He has over 10 years of experience, and decided to open his own business to create a place where everybody gets treated at great prices.</p>
             </div>
         </div>
     </div>
+<p></p>
+   <table class="table table-info table-hover">
+    	<thead>
+    		<tr>
+    			<th scope="col"><h1>Contact Us!</h1></th>
+    			<th scope="col">For all business inquiries, contact us by any method below!</th>
+    		</tr>
+    	</thead>
+    	<tbody>
+    		<tr>
+    			<td>Phone Number</td>
+    			<td>(613)-8*0-*5*5</td>
+    		</tr>
+    		<tr>
+    			<td>Email Inquiries</td>
+    			<td>generic@chiropracters.ca</td>
+    		</tr>
+    	</tbody>
+    </table>
 
-    <!--
-    We can also use buttons to expand some hidden options
-    https://getbootstrap.com/docs/5.0/components/collapse/
-    -->
-    <h1>More Information</h1>
-
-    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-        Button To Expand Options
-    </button>
-
-    <div class="collapse" id="collapseExample">
-        <div class="card card-body">
-            Here we have some hidden data to avoid cluttering the page with information
-        </div>
-    </div>
-
-    <!-- This example is using what is called an accordian, this is one of three examples
-    https://getbootstrap.com/docs/5.0/components/accordion/
-    -->
-
-    <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Accordion Item #1
-                </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">I can put information in this area</div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    Accordion Item #2
-                </button>
-            </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">I can put information in this area</div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Accordion Item #3
-                </button>
-            </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">I can place information in this area</div>
-            </div>
-        </div>
-    </div>
 
 </div>
 <!-- here we input our javascript helper -->
