@@ -63,11 +63,34 @@ Many websites will use what is called CSS grid layouts, where you will have a he
         <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Limb Relief
+                    Pain Relief
                 </button>
             </h2>
             <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">For people who have joint aches and need relief, our chiropractitioners have expertise in propper alignment of limbs.</div>
+                <div class="accordion-body">For people who have joint aches and need pain relief, our chiropractitioners have expertise in propper alignment of limbs.</div>
+            </div>
+        </div>
+        <div cllass="accordion-item">
+            <h2 class="accordion-header" id="flush=headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
+                aria-controls="flush-collapseFour">
+                Enhancing Range of Motion
+                </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body bg-white"> For people who experience stiffness in their body and would like to regain their range of motion in their body. This service focusses on enhancing the individual's range of motion.
+                </div>
+            </div>
+        </div>
+        <div cllass="accordion-item">
+            <h2 class="accordion-header" id="flush=headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false"
+                aria-controls="flush-collapseFive">
+                Adjustments
+                </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body bg-white"> For people not suffering from a specific issue, but would like to enjoy the chiropractic experience, this service involves going through the body to make adjustments in order to give your body a theraputic experience.
             </div>
         </div>
     </div>
@@ -110,12 +133,55 @@ Many websites will use what is called CSS grid layouts, where you will have a he
                 </div>
                 <div class="modal-body">
                 	<p>
-                    To book an appointment, please call us at (613)-8*0-*8*5. We can provide you with a quote over the phone!</p>
+                    For assistance with booking an appointment, or for more information, please call us at (613)-8*0-*8*5. We can provide you with a quote over the phone!</p>
 
-                    We are working towards adding booking features on this website!
                 </div>
+                <div class="modal-body">
+                    What service would you like to book?
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Full Body Session
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Back/Neck Relief
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Pain Relief
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Enhancing Range of Motion
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Adjustments
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <form action="/action_page.php">
+                        <label for="birthday">Appointment Date:</label>
+                        <input type="date" id="birthday" name="birthday">
+                    </form>
+                    <form action="/action_page.php">
+                        <label for="appt">Select a time:</label>
+                        <input type="time" id="appt" name="appt">
+                    </form>
+                </div> 
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Dismiss</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Dismiss</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
             </div>
         </div>
@@ -126,12 +192,24 @@ Many websites will use what is called CSS grid layouts, where you will have a he
     https://getbootstrap.com/docs/5.0/components/card/
     -->
 
-    <h1 class="text-white">Meet the Chiropractor!</h1>
+    <h1 class="text-white">Meet our Chiropractors!</h1>
     <div class="row justify-content-around">
         <div class="card" style="width: 18rem;">
             <img src="images/doctor.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <p class="card-text">Rakan is a professional in the chiropractic field. He has over 10 years of experience, and decided to open his own business to create a place where everybody gets treated at great prices.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/doctor_abdo.jfif" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Abulrahman is the newest addition to our team. With over 5 years of experience Abdulrahman is a very social professional who loves taking care of his patients.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/doctor_ismail.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Ismail is an experienced professional who is new to the field. He is working hard to gain more experience and to provide the best satistfaction for all patients.</p>
             </div>
         </div>
     </div>
