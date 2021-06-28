@@ -84,7 +84,7 @@ $(document).ready(function () {
         ")" +
         ". You're appointment of "
         service +
-        " has been confirmed on the following date: +
+        " has been confirmed on the following date: " +
         date + 
         ". "+
         doctor + " will be awaiting your arival."
