@@ -78,18 +78,16 @@ $(document).ready(function () {
     var service = $("#service-select").val();
     var doctor = $("#doctor-select").val();
     alert(
-      "Thank You " +
         name +
         "(" +
         email +
         ")" +
-        "," +
-        " will be in a " +
+        ". You're appointment of "
         service +
-        " appointment on " +
+        " has been confirmed on the following date: +
         date + 
-        " with " +
-        doctor + "."
+        ". "+
+        doctor + " will be awaiting your arival."
     );
 
     $("#AppointmentModal").modal("toggle");
