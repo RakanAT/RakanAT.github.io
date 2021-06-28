@@ -1,0 +1,345 @@
+<!doctype html>
+<!-- Here is a link to the code the documents this code is based on
+https://getbootstrap.com/docs/5.0/getting-started/introduction/
+This will help you get started with your code!
+-->
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    <title>Module 4 Lab</title>
+</head>
+<body>
+<!--
+I store all of the page information in a container,
+Many websites will use what is called CSS grid layouts, where you will have a header, body, footer and both sides used for ads or other information
+-->
+<div class = "container-lg bg-light p-4">
+
+    <!--
+    Most websites now feature what is called a NavBar.
+    The example I give is quite simple with a logo and some text, but you can use it for many navigational patterns
+    https://getbootstrap.com/docs/5.0/components/navbar/
+    -->
+
+    <nav class="navbar bg-light text-black p-3 my-3 rounded ">
+    	<img src="images/company_logo.png" class="rounded"width="130" height="200">
+        <h1> Welcome to Rakan's Chiropractic Clinic</h1>
+        <img src="images/company_logo.png" class="rounded"width="130" height="200">
+    </nav>
+
+    <div class=" p-3 my-3 border bg-light rounded">
+        <h1 class=""> <img src="images/info.PNG" width ="50" height = "50"> About us </h1>
+        <p class="p-4 my-3" style="font-size: 25px">We are a local small business looking to meet your chiropracter need</p>
+        <p style="font-size: 25px; padding-left: 1.5rem">We are dedicated to providing the <strong>best</strong> care to our customers</p>
+        <img src ="images/chiropractic.jpg"  width= "700" height="700" class="rounded mx-auto d-block img-fluid">
+    </div>
+
+    <h1 class="text-black"> <img src="images/sevices.png" width ="50" height = "50"> Services Offered</h1>
+   
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Full Body Session
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Enjoy a full session where the chiropractor will assess your body and make adjustments to help restore your full youth.</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Back/Neck Relief
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">If you have specific back and neck pain, let our chiropractitioners decompress your spine and relieve the tension from your neck. </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Pain Relief
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">For people who have joint aches and need pain relief, our chiropractitioners have expertise in propper alignment of limbs.</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush=headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
+                aria-controls="flush-collapseFour">
+                Enhancing Range of Motion
+                </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body bg-white"> For people who experience stiffness in their body and would like to regain their range of motion in their body. This service focusses on enhancing the individual's range of motion.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush=headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false"
+                aria-controls="flush-collapseFive">
+                Adjustments
+                </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body bg-white"> For people not suffering from a specific issue, but would like to enjoy the chiropractic experience, this service involves going through the body to make adjustments in order to give your body a theraputic experience.
+            </div>
+        </div>
+    </div>
+
+    <p></p>
+   
+    <!-- Alerts are an easy way to grab the users attention, this page goes into more detail
+    https://getbootstrap.com/docs/5.0/components/alerts/
+    -->
+   <!--
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Yikes!</strong> Are you suffering from pain? Book an appointment below!
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+-->
+
+    <!--
+    Buttons can be used for submitting forms, triggering events among many other things.
+    https://getbootstrap.com/docs/5.0/components/buttons/
+    -->
+
+
+    <h1 class="text-black"> <img src="images/appointment.PNG" width ="50" height = "50"> Book an Appointment Now!</h1>
+
+    <!-- Button trigger modal
+    We use the same button code from above, but now we can trigger a modal to appear.
+    The bootstrap tutorial includes many different types of modals that you can explore
+    https://getbootstrap.com/docs/5.0/components/modal/
+    -->
+    <div class="container">
+	<div class="row">
+		<div class="col-sm-5">
+			<div class="form-group">
+    			<label for="fst">First Name:</label>
+    			<input type="text" class="form-control" id="fst" placeholder="Enter your First Name">
+    		</div>
+			<form>
+    		<div class="form-group">
+      			<label for="sel1">Service:</label>
+      			<select class="form-control" id="servicesel">
+        			<option value="FullBody">Full Body Session</option>
+        			<option value="Back/Neck">Back/Neck Relief</option>
+        			<option value="PainRelief">Pain Relief</option>
+        			<option value="EnhanceMotion">Enhancing Range of Motion</option>
+					<option value="Adjustments">Adjustments</option>
+					
+      			</select>
+    		</div>
+			</form>
+
+		</div>
+		<div class="col-sm-5">
+			<div class="form-group">
+    			<label for="lst">Last Name:</label>
+    			<input type="LastName" class="form-control" id="pwd" placeholder="Enter your Last Name" required>
+    		</div>
+			<form>
+    		<div class="form-group">
+      			<label for="sel1">Staff:</label>
+      			<select class="form-control" name="staffsel" id="staffsel" onChange="staffdisableDates(this.value)">
+        			<option value="Dr. Rakan">Dr. Rakan</option>
+        			<option value="Dr. Abdo">Dr. Abdulrahman</option>
+        			<option value="Dr. Ismail">Dr. Ismail</option>
+      			</select>
+    		</div>
+			</form>
+			
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-5">
+			    
+				<div class="form-group">
+    			<label for="lst">Email:</label>
+    			<input type="email" class="form-control" id="pwd" placeholder="KSphysio@gmail.com" required>
+    			</div>
+    			<form method="post">
+      				<div class="form-group">
+        			<label for="date">Appointment Date:</label>
+        			<p></p>
+                        <input type="date" id="date" name="date">      			
+                    </div>
+                  
+				</form>	
+		</div>
+		<div class="col-sm-5">
+				<div class="form-group">
+    			<label for="lst">Phone Number:</label>
+    			<input type="tel" class="form-control error" id="phone" placeholder="XXX-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+    			</div>
+    			<div class="form-group">
+      			<label for="sel1">Time:</label>
+      			<label for="appt">Select a time:</label>
+      			<p></p>
+                        <input type="time" id="appt" name="appt">
+    			</div>
+		</div>
+	</div>
+	<div class="row">
+        <div class="col-sm-10">
+            <div class="card">
+                <div class="card-header">
+                    <strong>Payment</strong>
+                    
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="name">Name (As indicated on card)</label>
+                                <input class="form-control" id="name" type="text" placeholder="Enter your name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="ccnumber">Credit Card Number</label>
+                                <div class="input-group">
+                                    <input class="form-control error" type="text" title="Your credit card information is required now as we need a $20 deposit incase of cancellation" placeholder="XXXX XXXX XXXX XXXX" id="creditcard">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">
+											<img src="https://img.icons8.com/android/24/000000/bank-card-back-side.png"/>
+                                            <!--<i class="mdi mdi-credit-card"></i>--->
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+						    <div class="col-sm-3">
+                            <div class="form-group">
+                                <label for="cvv">CVV/CVC</label>
+                                <input class="form-control" id="cvv" type="text" placeholder="111">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-3">
+                            <label for="ccmonth">Exp. Month</label>
+                            <select class="form-control" id="ccmonth">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-sm-3">
+                            <label for="ccyear">Exp. Year</label>
+                            <select class="form-control" id="ccyear">
+                            
+                                <option>2021</option>
+                                <option>2022</option>
+                                <option>2023</option>
+                                <option>2024</option>
+                                <option>2025</option>
+                                <option>2026</option>
+                            </select>
+                        </div>
+						<div class="col-sm-3">
+                            <div class="form-group">
+                                <label for="cvv">Postal Code</label>
+                                <input class="form-control" id="postal" type="text" placeholder="A1A2A3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+			<br>
+			<div class="row">
+		<div class="col-sm-5">
+			<div class="form-group"> <!-- Submit button -->
+        		<button class="btn btn-primary " name="submit" type="submit" style="background-color:#181718" onClick="submit()">Submit</button>
+      		</div>
+		</div>
+	</div>	
+    </div>
+</div>
+<div>
+	<p></p>
+</div>
+
+
+    <!-- Cards are quite useful when building a website. They are a useful way to organize information.
+    They can be organized using a CSS grid or other layout options.
+    https://getbootstrap.com/docs/5.0/components/card/
+    -->
+
+    <h1 class="text-black"><img src="images/professional.PNG" width ="50" height = "50">Meet our Chiropractors!</h1>
+    <div class="row justify-content-around">
+        <div class="card" style="width: 18rem;">
+            <img src="images/doctor.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Rakan is a professional in the chiropractic field. He has over 10 years of experience, and decided to open his own business to create a place where everybody gets treated at great prices.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/doctor_abdo.jfif" width="400" height= "265" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Abulrahman is the newest addition to our team. With over 5 years of experience Abdulrahman is a very social professional who loves taking care of his patients.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="images/doctor_ismail.jpg" width="300" height= "265" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Ismail is an experienced professional who is new to the field. He is working hard to gain more experience and to provide the best satistfaction for all patients.</p>
+            </div>
+        </div>
+    </div>
+
+<div>
+	<p> </p>
+</div>
+   <table class="table table-grey table-hover">
+    	<thead>
+    		<tr>
+    			<th scope="col"><h1> <img src="images/contact.PNG" width ="50" height = "50">Contact Us!</h1></th>
+    			<th scope="col">For all business inquiries, contact us by any method below!</th>
+    		</tr>
+    	</thead>
+    	<tbody>
+    		<tr>
+    			<td>Phone Number</td>
+    			<td class="text-">(888)-8888-888</td>
+    		</tr>
+    		<tr>
+    			<td>Email Inquiries</td>
+    			<td>generic@chiropracters.ca</td>
+    		</tr>
+    		<tr>
+    			<td>Address</td>
+    			<td> 1203 Home Street, Ottawa, ON, K1K 1K1</td>
+    		</tr>
+    	</tbody>
+    </table>
+
+
+</div>
+<!-- here we input our javascript helper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
