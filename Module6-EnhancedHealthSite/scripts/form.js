@@ -1,6 +1,6 @@
 function checkCredit(creditInputID) {
   var a = document.getElementById(creditInputID).value;
-  var filter = new RegExp(/^([0-9]{4}\s){3}[0-9]{4}$/);
+  var filter = new RegExp(/^([0-9]{2}\s){3}[0-9]{4}$/);
   // return filter.test(a);
   console.log(filter.test(a));
   console.log(typeof a);
