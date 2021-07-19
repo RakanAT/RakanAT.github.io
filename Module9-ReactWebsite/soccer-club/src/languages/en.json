@@ -1,0 +1,31 @@
+{
+    "title": "Soccer Lovers",
+    "subhead1" : "Soccer Club",
+    "subhead2" : "For the love of the game!",
+    "navbar1" : "Home",
+    "navbar2" : "About",
+    "navbar3" : "Services",
+    "navbar4" : "Sign Up",
+
+    "cardsHead" : "Check out some our recent events and honorary players!",
+
+    "card1tit" : "Soccer Lovers vs Democratic Soccer Club",
+    "card1bod" : "We played against our rival soccer club and had a tie!",
+
+    "card2tit" : "MVP of the month",
+    "card2bod" : "Rodrigo carried his team, one of the best MVP plays!",
+
+    "card3tit" : "Most Goals of then Month",
+    "card3bod" : "Abdulrahman has had the highest goals this month, 20 goals!",
+
+    "card4tit" : "Youth",
+    "card4bod" : "We also have a youth team, all ages are welcome when it comes to soccer!",
+
+    "card5tit" : "Women",
+    "card5bod" : "Come and join the women's league!",
+
+    "footer1" : "Join the Soccer Lover's newsletter to receive invitations to all events planned! Soccer is for everyone.",
+    "footer2" : "You can unsubscribe at any time."
+
+
+}
