@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import Navbar from './components/Navbar';
 import './App.css';
 import Home from './components/pages/Home';
@@ -10,6 +11,11 @@ import About from './components/pages/About';
 import { IntlProvider, FormattedMessage, FormattedDate } from 'react-intl';
 
 function App() {
+  const [locale, setLocale] = useState('en');
+
+  const handleChange = (e) => {
+    setLocale(e.target.value);
+  };
   return (
     <>
       <Router>
