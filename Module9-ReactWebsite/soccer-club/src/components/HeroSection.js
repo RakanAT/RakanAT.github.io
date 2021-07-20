@@ -1,13 +1,17 @@
+import { IntlProvider, FormattedMessage, FormattedDate } from 'react-intl';
+import { translate, Trans } from "react-i18next";
 import React from 'react';
 import '../App.css';
 import { Button } from './Button';
 import './HeroSection.css';
 
 function HeroSection() {
+
   return (
     <div className='hero-container'>
       <video src='/videos/video-1.mp4' autoPlay loop muted />
       <h1>Soccer Lovers</h1>
+      {/* <Trans>{t("title")}</Trans> */}
       <p>Soccer Club</p>
       <p>For the love of the game!</p>
       <div className='hero-btns'>

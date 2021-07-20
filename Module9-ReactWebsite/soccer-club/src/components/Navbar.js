@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { I18nextProvider } from "react-i18next";
+import i18n from "../i18n";
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
@@ -7,8 +9,20 @@ function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
+  const locale = {
+    value: "en"
+  };
+
   const handleClick = () => setClick(!click);
   const closeMenu = () => setClick(false);
+
+  const handleChange = event => {
+    console.log("selected val is ", event.target.value);
+    let newlang = event.target.value;
+    this.setState(prevState => ({ value: newlang }));
+    console.log("state value is", newlang);
+    this.props.i18n.changeLanguage(newlang);
+  };
 
   const showButton = () => {
     if (window.innerWidth <= 960) {
@@ -32,8 +46,12 @@ function Navbar() {
             SL
             <i class='fab fa-typo3' />
           </Link>
-          <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+          <div className='lang-select' onClick={handleClick}>
+            <select onChange={handleChange} defaultValue={locale}>
+              {['EN', 'AR'].map((x) => (
+              <option key={x}>{x}</option>
+                ))}
+            </select>
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
